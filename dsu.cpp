@@ -3,7 +3,7 @@ private:
 	vector<ll> parent,rank,size;
 public:
 	dsu(ll n) {
-		parent.resize(n);
+		parent.resize(n+1);
 		for (ll i=0;i<=n;i++) {
 			parent[i]=i;
 		}
