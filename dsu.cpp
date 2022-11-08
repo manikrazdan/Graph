@@ -29,7 +29,7 @@ public:
 		}
 	}
 	void unionbysize(ll u,ll v) {
-		ll pu=findParent(u),ll v=findParent(v);
+		ll pu=findParent(u),ll pv=findParent(v);
 		if (pu==pv) return;
 		if (size[pu]<sizep[pv]) {
 			parent[pu]=pv;
