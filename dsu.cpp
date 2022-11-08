@@ -31,7 +31,7 @@ public:
 	void unionbysize(ll u,ll v) {
 		ll pu=findParent(u),pv=findParent(v);
 		if (pu==pv) return;
-		if (size[pu]<sizep[pv]) {
+		if (size[pu]<size[pv]) {
 			parent[pu]=pv;
 			size[pv]+=size[pu];
 		}
